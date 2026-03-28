@@ -183,14 +183,14 @@ export const achievements: Achievement[] = [
     title: 'Coding Olympiad Winner',
     description: 'First place in competitive programming competition, demonstrating exceptional problem-solving skills and algorithmic thinking.',
     image: '/src/assets/image1.jpg',
-    year: '2024'
+    year: '2025'
   },
   {
     id: 2,
     title: 'Coding Olympiad Champion',
     description: 'Second olympiad victory, showcasing consistent excellence in competitive coding and advanced programming concepts.',
     image: '/src/assets/image2.png',
-    year: '2025'
+    year: '2026'
   }
 ];
 

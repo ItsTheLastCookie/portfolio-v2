@@ -54,67 +54,58 @@ export function OpenCodeSetup() {
         </motion.div>
 
         <div className="opencode-grid-v4">
-          {/* Top Row - Model & Skills */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-50px' }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="opencode-card opencode-model-card"
+            className="opencode-model-row"
           >
-            <div className="opencode-card-header">
-              <div className="opencode-icon model-icon">
-                <Cpu size={32} />
+            <div className="opencode-card opencode-model-card">
+              <div className="opencode-card-header">
+                <div className="opencode-icon model-icon">
+                  <Cpu size={32} />
+                </div>
+                <div className="opencode-model-info">
+                  <h3>AI Model</h3>
+                  <span className="model-name">{openCodeConfig.model}</span>
+                </div>
               </div>
-              <div className="opencode-model-info">
-                <h3>AI Model</h3>
-                <span className="model-name">{openCodeConfig.model}</span>
-              </div>
-            </div>
-            <div className="opencode-model-stats">
-              <div className="model-stat">
-                <span className="stat-label">Editor</span>
-                <span className="stat-value">{openCodeConfig.editor}</span>
-              </div>
-              <div className="model-stat">
-                <span className="stat-label">Skills</span>
-                <span className="stat-value">{openCodeConfig.skills.length}</span>
-              </div>
-              <div className="model-stat">
-                <span className="stat-label">Features</span>
-                <span className="stat-value">{openCodeConfig.features.length}</span>
+              <div className="opencode-model-stats">
+                <div className="model-stat">
+                  <span className="stat-label">Editor</span>
+                  <span className="stat-value">{openCodeConfig.editor}</span>
+                </div>
+                <div className="model-stat">
+                  <span className="stat-label">Features</span>
+                  <span className="stat-value">{openCodeConfig.features.length}</span>
+                </div>
               </div>
             </div>
-          </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-50px' }}
-            transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="opencode-card opencode-skills-card"
-          >
-            <h3 className="opencode-card-title">
-              <Zap size={20} />
-              Loaded Skills
-            </h3>
-            <div className="opencode-skills-grid">
-              {openCodeConfig.skills.map((skill, index) => {
-                const Icon = skillIcons[skill] || Code2;
-                return (
-                  <motion.div
-                    key={skill}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: index * 0.05 }}
-                    className="opencode-skill-tag"
-                  >
-                    <Icon size={14} />
-                    {skill}
-                  </motion.div>
-                );
-              })}
+            <div className="opencode-card opencode-skills-compact">
+              <h3 className="opencode-card-title">
+                <Zap size={20} />
+                Loaded Skills
+              </h3>
+              <div className="opencode-skills-inline">
+                {openCodeConfig.skills.map((skill, index) => {
+                  const Icon = skillIcons[skill] || Code2;
+                  return (
+                    <motion.div
+                      key={skill}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.3, delay: index * 0.03 }}
+                      className="opencode-skill-tag"
+                    >
+                      <Icon size={14} />
+                      {skill}
+                    </motion.div>
+                  );
+                })}
+              </div>
             </div>
           </motion.div>
 

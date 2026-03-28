@@ -1784,11 +1784,32 @@ section {
   }
 }
 
-/* OpenCode Grid v4 - Key Features Full Width */
+/* OpenCode Grid v4 - Model + Skills Compact */
 .opencode-grid-v4 {
   display: grid;
-  grid-template-columns: 40% 60%;
   gap: 24px;
+}
+
+.opencode-model-row {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.opencode-model-row .opencode-model-card {
+  flex: 0 0 auto;
+  min-width: 280px;
+}
+
+.opencode-skills-compact {
+  flex: 1;
+  min-width: 0;
+}
+
+.opencode-skills-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .opencode-features-card-full {
@@ -1802,7 +1823,11 @@ section {
 }
 
 @media (max-width: 1024px) {
-  .opencode-grid-v4 {
-    grid-template-columns: 1fr;
+  .opencode-model-row {
+    flex-direction: column;
+  }
+  
+  .opencode-model-row .opencode-model-card {
+    min-width: 100%;
   }
 }

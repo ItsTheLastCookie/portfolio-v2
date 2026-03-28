@@ -33,7 +33,7 @@ export function Hero() {
             className="hero-badge"
           >
             <span className="dot" />
-            Available for work
+            A Minecraft LOVER
           </motion.div>
 
           <motion.h1 

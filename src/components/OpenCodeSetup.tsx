@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Cpu, Zap, Terminal, Code2, Rocket, Brain, GitBranch, Globe, Layers, Workflow, Command, FileCode } from 'lucide-react';
+import { Cpu, Zap, Terminal, Code2, Rocket, Brain, GitBranch, Globe, Layers, Workflow, Command, FileCode, Users, Lightbulb, ScanLine, Bug, RefreshCw, FileText, TestTube, Plug } from 'lucide-react';
 import { openCodeConfig } from '../data/projects';
 
 const skillIcons: Record<string, React.ElementType> = {
@@ -22,6 +22,14 @@ const featureIcons: Record<string, React.ElementType> = {
   'File Operations': Command,
   'Web App Testing': Globe,
   'Deployment Automation': Rocket,
+  'Multi-Agent Collaboration': Users,
+  'Context-Aware Assistance': Lightbulb,
+  'Real-time Code Analysis': ScanLine,
+  'Error Detection & Fix': Bug,
+  'Code Refactoring': RefreshCw,
+  'Documentation Generation': FileText,
+  'Test Generation': TestTube,
+  'API Integration': Plug,
 };
 
 export function OpenCodeSetup() {

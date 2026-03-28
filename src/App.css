@@ -1764,12 +1764,14 @@ section {
 
 .opencode-features-card-v3 {
   flex: 1;
+  min-height: 320px;
 }
 
 .opencode-features-card-v3 .opencode-features-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  align-content: flex-start;
 }
 
 @media (max-width: 1024px) {

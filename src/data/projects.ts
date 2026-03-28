@@ -216,6 +216,14 @@ export const openCodeConfig = {
     'Git Integration',
     'File Operations',
     'Web App Testing',
-    'Deployment Automation'
+    'Deployment Automation',
+    'Multi-Agent Collaboration',
+    'Context-Aware Assistance',
+    'Real-time Code Analysis',
+    'Error Detection & Fix',
+    'Code Refactoring',
+    'Documentation Generation',
+    'Test Generation',
+    'API Integration'
   ]
 };

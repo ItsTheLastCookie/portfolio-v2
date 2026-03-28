@@ -1783,3 +1783,26 @@ section {
     gap: 20px;
   }
 }
+
+/* OpenCode Grid v4 - Key Features Full Width */
+.opencode-grid-v4 {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 24px;
+}
+
+.opencode-features-card-full {
+  grid-column: 1 / -1;
+}
+
+.opencode-features-grid-full {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+@media (max-width: 1024px) {
+  .opencode-grid-v4 {
+    grid-template-columns: 1fr;
+  }
+}

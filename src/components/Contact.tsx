@@ -62,7 +62,7 @@ export function Contact() {
               </div>
               <div className="contact-link-content">
                 <span className="contact-link-label">Fun Fact</span>
-                <span className="contact-link-value">I LIKE minecraft 🎮</span>
+                <span className="contact-link-value">I love minecraft 🎮</span>
               </div>
             </div>
           </motion.div>

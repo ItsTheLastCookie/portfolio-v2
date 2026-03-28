@@ -1690,3 +1690,60 @@ section {
   background: linear-gradient(135deg, rgba(255, 149, 0, 0.2) 0%, rgba(255, 119, 48, 0.2) 100%) !important;
   color: var(--accent-amber) !important;
 }
+
+/* New OpenCode Grid Layout - No empty space */
+.opencode-grid-v2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto;
+  gap: 24px;
+}
+
+.opencode-model-card {
+  grid-row: span 2;
+}
+
+.opencode-features-card-v2 {
+  grid-column: span 1;
+}
+
+.opencode-features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.opencode-feature-tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, rgba(255, 149, 0, 0.1) 0%, rgba(255, 119, 48, 0.1) 100%);
+  border: 1px solid rgba(255, 149, 0, 0.2);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--accent-amber);
+  transition: all 0.3s ease;
+}
+
+.opencode-feature-tag:hover {
+  border-color: var(--accent-amber);
+  background: rgba(255, 149, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .opencode-grid-v2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  
+  .opencode-model-card {
+    grid-row: span 1;
+  }
+  
+  .opencode-features-card-v2 {
+    grid-column: span 1;
+  }
+}

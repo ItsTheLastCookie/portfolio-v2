@@ -45,7 +45,7 @@ export function OpenCodeSetup() {
           </p>
         </motion.div>
 
-        <div className="opencode-grid">
+        <div className="opencode-grid-v2">
           {/* Model Info Card */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -111,34 +111,32 @@ export function OpenCodeSetup() {
             </div>
           </motion.div>
 
-          {/* Features List */}
+          {/* Features Grid - Horizontal */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-50px' }}
             transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="opencode-card opencode-features-card"
+            className="opencode-card opencode-features-card-v2"
           >
             <h3 className="opencode-card-title">
               <Brain size={20} />
               Key Features
             </h3>
-            <div className="opencode-features-list">
+            <div className="opencode-features-grid">
               {openCodeConfig.features.map((feature, index) => {
                 const Icon = featureIcons[feature] || Zap;
                 return (
                   <motion.div
                     key={feature}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: index * 0.1 }}
-                    className="opencode-feature-item"
+                    transition={{ duration: 0.3, delay: index * 0.05 }}
+                    className="opencode-feature-tag"
                   >
-                    <div className="feature-icon">
-                      <Icon size={18} />
-                    </div>
-                    <span>{feature}</span>
+                    <Icon size={14} />
+                    {feature}
                   </motion.div>
                 );
               })}

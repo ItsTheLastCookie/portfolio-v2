@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, ArrowUpRight } from 'lucide-react';
+import { Mail, ArrowUpRight, Gamepad2 } from 'lucide-react';
 import { GitHubIcon } from './icons';
 import { personalInfo } from '../data/projects';
 
@@ -55,6 +55,16 @@ export function Contact() {
               </div>
               <ArrowUpRight size={18} className="contact-link-arrow" />
             </a>
+
+            <div className="contact-link contact-link-fun">
+              <div className="contact-link-icon fun-icon">
+                <Gamepad2 size={24} />
+              </div>
+              <div className="contact-link-content">
+                <span className="contact-link-label">Fun Fact</span>
+                <span className="contact-link-value">I LIKE minecraft 🎮</span>
+              </div>
+            </div>
           </motion.div>
 
           <motion.div

@@ -1675,3 +1675,18 @@ section {
     font-size: 0.85rem;
   }
 }
+
+/* Fun Fact Card in Contact */
+.contact-link-fun {
+  cursor: default;
+}
+
+.contact-link-fun:hover {
+  border-color: var(--accent-amber);
+  transform: translateX(8px);
+}
+
+.fun-icon {
+  background: linear-gradient(135deg, rgba(255, 149, 0, 0.2) 0%, rgba(255, 119, 48, 0.2) 100%) !important;
+  color: var(--accent-amber) !important;
+}

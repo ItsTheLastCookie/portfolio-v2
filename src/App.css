@@ -1747,3 +1747,36 @@ section {
     grid-column: span 1;
   }
 }
+
+/* OpenCode Grid v3 - Key Features near AI Model */
+.opencode-grid-v3 {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 24px;
+}
+
+.opencode-left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.opencode-features-card-v3 {
+  flex: 1;
+}
+
+.opencode-features-card-v3 .opencode-features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (max-width: 1024px) {
+  .opencode-grid-v3 {
+    grid-template-columns: 1fr;
+  }
+  
+  .opencode-left-column {
+    gap: 20px;
+  }
+}

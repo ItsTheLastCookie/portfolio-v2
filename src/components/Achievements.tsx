@@ -88,7 +88,7 @@ export function Achievements() {
           </div>
           <div className="achievement-stat-divider" />
           <div className="achievement-stat-item">
-            <span className="achievement-stat-value">7</span>
+            <span className="achievement-stat-value">10</span>
             <span className="achievement-stat-label">Projects Built</span>
           </div>
         </motion.div>

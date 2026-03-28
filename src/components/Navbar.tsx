@@ -20,6 +20,7 @@ export function Navbar() {
     { href: '#about', label: 'About' },
     { href: '#achievements', label: 'Achievements' },
     { href: '#projects', label: 'Projects' },
+    { href: '#opencode', label: 'Setup' },
     { href: '#skills', label: 'Skills' },
     { href: '#contact', label: 'Contact' },
   ];

@@ -29,19 +29,58 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    name: 'Easy AI Trainer',
-    description: 'Interactive Python application for training chatbots by dynamically adding conditions and responses. Perfect for learning basic AI training concepts with pattern matching and real-time knowledge updates.',
+    name: 'StockAI',
+    description: 'AI-powered stock analysis and prediction tool. Uses machine learning algorithms to analyze market trends and provide insights for trading decisions.',
     language: 'Python',
-    tech: ['Python', 'Pattern Matching', 'NLP Basics'],
-    githubUrl: 'https://github.com/ItsTheLastCookie/easyaitrainer',
+    tech: ['Python', 'Machine Learning', 'Data Analysis', 'Finance'],
+    githubUrl: 'https://github.com/ItsTheLastCookie/StockAi',
     liveUrl: null,
     stars: 0,
-    createdAt: '2024-12-27',
+    createdAt: '2026-03-28',
     category: 'AI/ML',
-    featured: false
+    featured: true
   },
   {
     id: 4,
+    name: 'Qwen Code',
+    description: 'Code generation and assistance tool powered by Qwen AI. Helps developers write, refactor, and optimize code with AI-powered suggestions.',
+    language: 'Python',
+    tech: ['Python', 'AI', 'Code Generation', 'NLP'],
+    githubUrl: 'https://github.com/ItsTheLastCookie/Qwen_Code',
+    liveUrl: null,
+    stars: 0,
+    createdAt: '2026-03-28',
+    category: 'AI/ML',
+    featured: true
+  },
+  {
+    id: 5,
+    name: 'PiPico',
+    description: 'Raspberry Pi Pico microcontroller projects and experiments. Collection of embedded systems projects using MicroPython and C/C++.',
+    language: 'Python',
+    tech: ['Python', 'MicroPython', 'Raspberry Pi', 'Embedded Systems'],
+    githubUrl: 'https://github.com/ItsTheLastCookie/PiPico',
+    liveUrl: null,
+    stars: 0,
+    createdAt: '2026-03-28',
+    category: 'Embedded',
+    featured: false
+  },
+  {
+    id: 6,
+    name: 'Minecraft Cracked Exploit',
+    description: 'Security research project exploring Minecraft client vulnerabilities. Educational purposes only - demonstrates penetration testing concepts.',
+    language: 'Python',
+    tech: ['Python', 'Security', 'Reverse Engineering', 'Networking'],
+    githubUrl: 'https://github.com/ItsTheLastCookie/Minecraft_Cracked_Exploit',
+    liveUrl: null,
+    stars: 0,
+    createdAt: '2026-03-28',
+    category: 'Security',
+    featured: false
+  },
+  {
+    id: 7,
     name: 'Simple Shell',
     description: 'Custom Unix shell implementation in Rust with piping support, command execution, and directory navigation. Demonstrates systems programming fundamentals and process management.',
     language: 'Rust',
@@ -54,7 +93,7 @@ export const projects: Project[] = [
     featured: true
   },
   {
-    id: 5,
+    id: 8,
     name: 'Pose Tracker',
     description: 'Real-time human pose tracking using MediaPipe and OpenCV. Features skeleton visualization, performance metrics, debug overlay, and video recording capabilities with 720p/30fps support.',
     language: 'Python',
@@ -67,7 +106,20 @@ export const projects: Project[] = [
     featured: true
   },
   {
-    id: 6,
+    id: 9,
+    name: 'Easy AI Trainer',
+    description: 'Interactive Python application for training chatbots by dynamically adding conditions and responses. Perfect for learning basic AI training concepts with pattern matching and real-time knowledge updates.',
+    language: 'Python',
+    tech: ['Python', 'Pattern Matching', 'NLP Basics'],
+    githubUrl: 'https://github.com/ItsTheLastCookie/easyaitrainer',
+    liveUrl: null,
+    stars: 0,
+    createdAt: '2024-12-27',
+    category: 'AI/ML',
+    featured: false
+  },
+  {
+    id: 10,
     name: 'Simple Text Editor',
     description: 'Lightweight GUI text editor built with Python tkinter. Features file saving, font switching (Helvetica/Courier), and a minimal, distraction-free interface.',
     language: 'Python',
@@ -90,24 +142,26 @@ export const skills = [
   { name: 'Node.js', level: 78, category: 'Backend' },
   { name: 'OpenCV', level: 75, category: 'Computer Vision' },
   { name: 'MediaPipe', level: 72, category: 'Computer Vision' },
+  { name: 'Machine Learning', level: 80, category: 'AI/ML' },
   { name: 'CLI Development', level: 88, category: 'Tools' },
-  { name: 'Systems Programming', level: 70, category: 'Systems' }
+  { name: 'Systems Programming', level: 70, category: 'Systems' },
+  { name: 'Embedded Systems', level: 65, category: 'Hardware' }
 ];
 
 export const stats = {
-  totalProjects: 7,
-  githubRepos: 7,
+  totalProjects: 10,
+  githubRepos: 10,
   primaryLanguage: 'Python',
-  linesOfCode: '10,000+'
+  linesOfCode: '15,000+'
 };
 
 export const personalInfo = {
   name: 'Adam',
   title: 'Full-Stack Developer & Systems Engineer',
   tagline: 'Building tools that matter. From CLI utilities to computer vision applications.',
-  bio: '12-year-old coding prodigy with 2 coding olympiad wins. Passionate about Python automation, Rust systems programming, and computer vision. I create efficient, user-friendly tools that solve real problems. Currently exploring the intersection of AI and practical applications.',
-  location: 'Remote',
-  email: 'contact@example.com',
+  bio: '12-year-old coding prodigy with 2 coding olympiad wins. I LIKE minecraft 🎮. Passionate about Python automation, Rust systems programming, and computer vision. I create efficient, user-friendly tools that solve real problems. Currently exploring the intersection of AI and practical applications.',
+  location: '',
+  email: 'etrossudio@gmail.com',
   github: 'ItsTheLastCookie',
   linkedin: null,
   twitter: null,
@@ -139,3 +193,29 @@ export const achievements: Achievement[] = [
     year: '2025'
   }
 ];
+
+// OpenCode Setup Configuration
+export const openCodeConfig = {
+  model: 'Kimi K2.5',
+  editor: 'OpenCode',
+  skills: [
+    'Web Development',
+    'Frontend Design',
+    'Vercel Deploy',
+    'GitHub Integration',
+    'Code Review',
+    'Skill Management',
+    'Task Automation',
+    'CLI Operations',
+    'File Management',
+    'Project Scaffolding'
+  ],
+  features: [
+    'AI-Powered Coding',
+    'Automatic Skill Loading',
+    'Git Integration',
+    'File Operations',
+    'Web App Testing',
+    'Deployment Automation'
+  ]
+};

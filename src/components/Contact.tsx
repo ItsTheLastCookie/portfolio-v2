@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, MapPin, ArrowUpRight } from 'lucide-react';
+import { Mail, ArrowUpRight } from 'lucide-react';
 import { GitHubIcon } from './icons';
 import { personalInfo } from '../data/projects';
 
@@ -55,16 +55,6 @@ export function Contact() {
               </div>
               <ArrowUpRight size={18} className="contact-link-arrow" />
             </a>
-
-            <div className="contact-link contact-link-static">
-              <div className="contact-link-icon">
-                <MapPin size={24} />
-              </div>
-              <div className="contact-link-content">
-                <span className="contact-link-label">Location</span>
-                <span className="contact-link-value">{personalInfo.location}</span>
-              </div>
-            </div>
           </motion.div>
 
           <motion.div

@@ -1787,7 +1787,7 @@ section {
 /* OpenCode Grid v4 - Key Features Full Width */
 .opencode-grid-v4 {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 40% 60%;
   gap: 24px;
 }
 
